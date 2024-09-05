@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="TNG.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="menu1">
+            <img src="menu.png" width="20px" height="20px" style="margin-top: 10px;">
+            <img src="profile.png" width="40px" height="40px">
+        </div>
+        <div class="menu2">
+            <span class="username">TRE TNG</span>
+            <div class="menu">
+                <a href="#">CÔNG VIỆC</a>
+                <a href="#">NHÂN VIÊN CỦA TÔI ▼</a>
+                <a href="#">BỘ LỌC TUỲ CHỈNH ▼</a>
+                <a href="#">ĐANG THEO DÕI</a>
+                <a href="#">LỊCH BIỂU </a>
+                <a href="#">CV LẶP LẠI </a>
+            </div>
+        </div>
+        <div class="search">
+            <div class="search-cnt">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Tìm kiếm công việc">
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content_1">
+        <div class="task-list">
+            <div class="insert-staff">
+                <button class="icon-button"><img src="plus (1).png" width="30px" height="30px"></button>
+                <span style="padding: 10px; color:#007bff;">Tạo công việc mới</span>
+            </div>
+            <div class="db">
+            <div class="dropdown">
+                <button class="dropbtn">Giao & được giao <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <span style="color: black; font-weight: bold; padding-left: 15px;">Giao & được giao</span>
+                    <a href="#">CV được giao </a>
+                    <a href="#">CV giao đi</a>
+                    <div class="dropdown-submenu">
+                        <a class="dp-sb" >Công việc & công việc con<i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content-sub">
+                            <a href="#">Công việc con 1</a>
+                            <a href="#">Công việc con 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+            <div class="dropdown">
+                <button class="dropbtn">Tất cả trạng thái <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <div class="dropdown-submenu">
+                        <a href="#">3</a>
+                        <div class="dropdown-content-sub">
+                            <a href="#">3.1</a>
+                            <a href="#">3.2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>         
+            <div class="dropdown">
+                <button class="dropbtn">Tất cả dự án <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <div class="dropdown-submenu">
+                        <a href="#">3</a>
+                        <div class="dropdown-content-sub">
+                            <a href="#">3.1</a>
+                            <a href="#">3.2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="dropdown">
+                <button class="dropbtn">Thời gian cập nhật <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <div class="dropdown-submenu">
+                        <a href="#">3</a>
+                        <div class="dropdown-content-sub">
+                            <a href="#">3.1</a>
+                            <a href="#">3.2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div> 
+        </div>
+        </div>
+    </div>
+        <div class="content_2">
+            <div>
+                <div class="tuan">
+                    <span >Tuần 15/07 - 21/07</span>
+                </div>
+                <div class="task">
+                    <input type="checkbox" class="checkbox">
+                    <div class="task2" >
+                    <span class="task-name">Họp tiến độ triển khai dự án</span>
+                    <span><span class="project-tag">Công việc của TNG </span>-<span class="project-tg">Tạo bởi @TRETNG</span> </span>
+                    </div>
+                    <div class="task3">
+                    <div class="task31">
+                    <span >21/07/2024</span>
+                    <img src="profile.png" class="men">
+                    <span >TNG</span>
+                    <img src="star.png" class="saotrang">
+                    </div>
+                    <div class="task32" >
+                        <img src="editing.png" class="sao" >
+                        <i class="fa-solid fa-calendar-days con"></i> 
+                        <img src="play-button.png" class="sao">
+                        <img src="warning.png" class="sao">
+                        <img src="bookmark.png" class="sao">
+                        <img src="bell.png" class="sao">
+                        <img src="bin.png" class="sao" onclick="deleteTask(this)">
+                    </div>
+                    </div>
+                 </div>
+                <div class="task">
+                    <input type="checkbox" class="checkbox">
+                    <div class="task2" >
+                    <span class="task-name">Xây dựng timeline triển khai VPS-An Khánh</span>
+                    <span><span class="project-tag">Công việc của TNG </span>-<span class="project-tg">Tạo bởi @TRETNG</span> </span>
+                    </div>
+                    <div class="task3">
+                    <div class="task31">
+                    <span >21/07/2024</span>
+                    <img src="profile.png" class="men">
+                    <span >TNG</span>
+                    <img src="star.png" class="saotrang">
+                    </div>
+                    <div class="task32" >
+                        <img src="editing.png" class="sao" >
+                        <i class="fa-solid fa-calendar-days con"></i> 
+                        <img src="play-button.png" class="sao">
+                        <img src="warning.png" class="sao">
+                        <img src="bookmark.png" class="sao">
+                        <img src="bell.png" class="sao">
+                        <img src="bin.png" class="sao" onclick="deleteTask(this)">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_2">
+            <div>
+                <div class="tuan">
+                    <span >Tuần 08/07 - 14/07</span>
+                </div>
+                <div class="task">
+                    <input type="checkbox" class="checkbox">
+                    <div class="task2" >
+                    <span class="task-name">Tạo bảng phân tích chức năng</span>
+                    <span><span class="project-tag">Công việc của TNG </span>-<span class="project-tg">Tạo bởi @TRETNG</span> </span>
+                    </div>
+                    <div class="task3">
+                    <div class="task31">
+                    <span >21/07/2024</span>
+                    <img src="profile.png" class="men">
+                    <span >TNG</span>
+                    <img src="star.png" class="saotrang">
+                    </div>
+                    <div class="task32" >
+                        <img src="editing.png" class="sao" >
+                        <i class="fa-solid fa-calendar-days con"></i> 
+                        <img src="play-button.png" class="sao">
+                        <img src="warning.png" class="sao">
+                        <img src="bookmark.png" class="sao">
+                        <img src="bell.png" class="sao">
+                        <img src="bin.png" class="sao" onclick="deleteTask(this)">
+                    </div>
+                    </div>
+                 </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script>
+        function deleteTask(element) {
+            // Hiển thị hộp thoại xác nhận
+            const confirmation = confirm("Bạn có chắc chắn muốn xóa công việc này?");
+            if (confirmation) {
+                // Nếu người dùng nhấn "OK", thì xóa dòng
+                const task = element.closest('.task');
+                task.remove();
+            }
+        }
+    </script>
+    
+</body>
+</html>
